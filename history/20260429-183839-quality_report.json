@@ -1,0 +1,18 @@
+{
+  "score": 90.0,
+  "strengths": [
+    "至少包含钩子、核心解释、总结等多个场景",
+    "强调几何直觉，符合 Manim 教学动画优势",
+    "包含 aha moment / 不变量揭示",
+    "包含统一色板",
+    "sync_units 分段密度满足普通场景至少 3 段"
+  ],
+  "weaknesses": [
+    "visual_design 未明确 safe_text_box/fit_to_canvas/safe_group 安全布局契约",
+    "sync_units 未明确 emphasize_current/dim_others/restore_opacity 聚焦 helper 契约"
+  ],
+  "next_actions": [
+    "在 visual_design 中写清 safe_text_box/fit_to_canvas/safe_group 如何保护文本、公式和组合对象",
+    "在 sync_units.visual_action 中写清 emphasize_current/dim_others/restore_opacity 如何聚焦当前对象、弱化周边并恢复状态"
+  ]
+}
