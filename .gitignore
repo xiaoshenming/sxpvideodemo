@@ -1,0 +1,7 @@
+.env
+.env.*
+__pycache__/
+.manim/
+media/
+*.log
+.DS_Store
