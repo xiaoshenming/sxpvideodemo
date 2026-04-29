@@ -1,0 +1,213 @@
+{
+  "request": {
+    "topic": "勾股定理几何证明",
+    "audience": "初中/高中学生",
+    "style": "3Blue1Brown 风格，几何直观优先",
+    "aspect_ratio": "16:9",
+    "enable_tts": false,
+    "max_scenes": 3
+  },
+  "plan": {
+    "title": "勾股定理几何证明",
+    "topic": "勾股定理几何证明",
+    "narrative_arc": "问题钩子 → 几何直觉 → 结构揭示 → 方法总结",
+    "geometry_rearrangement": "用四个全等直角三角形围绕中心方形做两种动态面积重排, 先展示面积守恒, 再让 a^2 + b^2 = c^2 被画面推出来。",
+    "camera_plan": [
+      "Hook: 中景展示直角三角形和三边面积目标, 公式暂不出现。",
+      "Geometry Build: 局部放大四个全等直角三角形的旋转/平移路径。",
+      "Transformation/Aha: 镜头收束到中心空白方形, 停顿 >= 2.0 秒。",
+      "Recap: 拉回全景, 用 SurroundingRectangle 联系两个小方形与斜边大方形。"
+    ],
+    "safe_layout_contract": "所有 Text/MathTex/VGroup/Group 必须进入 full_canvas 12.0x6.6, 首次显示前使用 safe_text_box/fit_to_canvas/safe_group 或等价安全布局。",
+    "attention_plan": [
+      "新对象出现时使用 emphasize_current 标出当前焦点。",
+      "非当前对象使用 dim_others 降到 0.35-0.6 透明度。",
+      "关键 reveal 后使用 restore_opacity 恢复整体关系。"
+    ],
+    "subcaption_timeline": [
+      "每个核心动画前调用 self.add_subcaption(...)。",
+      "关键 reveal 后字幕保留至少 1.5 秒。",
+      "aha moment 后字幕/画面停顿至少 2.0 秒。"
+    ],
+    "quality_claims": [
+      "公式由面积重排赚出来, 不是提前贴字。",
+      "四个全等直角三角形在两种拼法中面积保持不变。",
+      "结尾必须把视觉不变量和 a^2 + b^2 = c^2 对齐。"
+    ],
+    "palette": {
+      "BG": "#1C1C1C",
+      "PRIMARY": "#58C4DD",
+      "SECONDARY": "#83C167",
+      "ACCENT": "#FFFF00",
+      "MUTED": "#888888"
+    },
+    "scenes": [
+      {
+        "index": 1,
+        "name": "Hook",
+        "teaching_goal": "用一个具体问题激发好奇心，避免直接堆公式。",
+        "visual_design": "暗色背景，标题与一个核心图形从中心浮现。",
+        "narration": "今天我们用直观动画理解：勾股定理几何证明",
+        "duration_seconds": 7.0,
+        "sync_units": [
+          {
+            "narration": "今天我们用直观动画理解：勾股定理几何证明",
+            "visual_action": "写入标题, 建立当前问题",
+            "reveal_targets": [
+              "title"
+            ],
+            "emphasis_targets": [
+              "title"
+            ]
+          },
+          {
+            "narration": "先明确这一段的目标: 用一个具体问题激发好奇心，避免直接堆公式。",
+            "visual_action": "展示教学目标, 把学生注意力拉到当前任务",
+            "reveal_targets": [
+              "goal"
+            ],
+            "emphasis_targets": [
+              "goal"
+            ]
+          },
+          {
+            "narration": "再看画面设计: 暗色背景，标题与一个核心图形从中心浮现。",
+            "visual_action": "逐步创建核心图形, 再显示视觉说明",
+            "reveal_targets": [
+              "box",
+              "dot",
+              "arrow",
+              "visual"
+            ],
+            "emphasis_targets": [
+              "arrow"
+            ]
+          },
+          {
+            "narration": "这一步的关键是: 用一个具体问题激发好奇心，避免直接堆公式。",
+            "visual_action": "高亮核心结构, 把视觉变化和教学目标对应起来",
+            "reveal_targets": [
+              "visual",
+              "arrow"
+            ],
+            "emphasis_targets": [
+              "visual",
+              "arrow"
+            ]
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "name": "GeometryFirst",
+        "teaching_goal": "先建立几何/画面直觉，再进入符号表达。",
+        "visual_design": "左侧图形演化，右侧只保留一个关键公式或关键词。",
+        "narration": "先看形状如何变化，再问为什么它必然成立。",
+        "duration_seconds": 10.0,
+        "sync_units": [
+          {
+            "narration": "先看形状如何变化，再问为什么它必然成立。",
+            "visual_action": "写入标题, 建立当前问题",
+            "reveal_targets": [
+              "title"
+            ],
+            "emphasis_targets": [
+              "title"
+            ]
+          },
+          {
+            "narration": "先明确这一段的目标: 先建立几何/画面直觉，再进入符号表达。",
+            "visual_action": "展示教学目标, 把学生注意力拉到当前任务",
+            "reveal_targets": [
+              "goal"
+            ],
+            "emphasis_targets": [
+              "goal"
+            ]
+          },
+          {
+            "narration": "再看画面设计: 左侧图形演化，右侧只保留一个关键公式或关键词。",
+            "visual_action": "逐步创建核心图形, 再显示视觉说明",
+            "reveal_targets": [
+              "box",
+              "dot",
+              "arrow",
+              "visual"
+            ],
+            "emphasis_targets": [
+              "arrow"
+            ]
+          },
+          {
+            "narration": "这一步的关键是: 先建立几何/画面直觉，再进入符号表达。",
+            "visual_action": "高亮核心结构, 把视觉变化和教学目标对应起来",
+            "reveal_targets": [
+              "visual",
+              "arrow"
+            ],
+            "emphasis_targets": [
+              "visual",
+              "arrow"
+            ]
+          }
+        ]
+      },
+      {
+        "index": 3,
+        "name": "AhaMoment",
+        "teaching_goal": "制造 aha moment，把直觉连接到数学结构。",
+        "visual_design": "用高亮、Brace、箭头强调结构不变量。",
+        "narration": "关键不是记住结论，而是看见不变量。",
+        "duration_seconds": 12.0,
+        "sync_units": [
+          {
+            "narration": "关键不是记住结论，而是看见不变量。",
+            "visual_action": "写入标题, 建立当前问题",
+            "reveal_targets": [
+              "title"
+            ],
+            "emphasis_targets": [
+              "title"
+            ]
+          },
+          {
+            "narration": "先明确这一段的目标: 制造 aha moment，把直觉连接到数学结构。",
+            "visual_action": "展示教学目标, 把学生注意力拉到当前任务",
+            "reveal_targets": [
+              "goal"
+            ],
+            "emphasis_targets": [
+              "goal"
+            ]
+          },
+          {
+            "narration": "再看画面设计: 用高亮、Brace、箭头强调结构不变量。",
+            "visual_action": "逐步创建核心图形, 再显示视觉说明",
+            "reveal_targets": [
+              "box",
+              "dot",
+              "arrow",
+              "visual"
+            ],
+            "emphasis_targets": [
+              "arrow"
+            ]
+          },
+          {
+            "narration": "这一步的关键是: 制造 aha moment，把直觉连接到数学结构。",
+            "visual_action": "高亮核心结构, 把视觉变化和教学目标对应起来",
+            "reveal_targets": [
+              "visual",
+              "arrow"
+            ],
+            "emphasis_targets": [
+              "visual",
+              "arrow"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "engine": "deterministic"
+}
