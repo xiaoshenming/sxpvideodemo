@@ -1,15 +1,17 @@
 {
   "topic": "勾股定理几何证明",
   "summary": {
-    "snapshot_count": 9,
-    "published_count": 9,
+    "snapshot_count": 10,
+    "published_count": 10,
     "archived_only_count": 0,
     "best_quality_score": 100.0,
     "latest_quality_score": 100.0,
+    "candidate_issue_counts": {},
+    "latest_candidate_issue_codes": [],
     "next_candidate_minimum_score": 100.0,
     "latest_score_gap_to_next_publish": 0.0,
     "quality_regression_count": 0,
-    "cinematic_ready_count": 5,
+    "cinematic_ready_count": 6,
     "publish_gate": {
       "best_publish_score": 95.0,
       "first_snapshot_can_publish_without_existing_best": true,
@@ -43,7 +45,7 @@
     }
   },
   "latest_best": {
-    "timestamp": "20260430-041545",
+    "timestamp": "20260430-044626",
     "quality_score": 100.0,
     "root_files": {
       "video": "视频.mp4",
@@ -333,6 +335,46 @@
         "metadata": "history/20260430-041545-metadata.json",
         "quality_report": "history/20260430-041545-quality_report.json",
         "validate": "history/20260430-041545-validate.json"
+      }
+    },
+    {
+      "timestamp": "20260430-044626",
+      "topic": "勾股定理几何证明",
+      "quality_score": 100.0,
+      "current_best_score": 100.0,
+      "quality_delta_from_current_best": 0.0,
+      "improvement_over_best": 0.0,
+      "cinematic_best_threshold": 95.0,
+      "meets_cinematic_best_threshold": true,
+      "quality_dimensions": {
+        "geometry_rearrangement": 100.0,
+        "cinematic_composition": 100.0,
+        "attention_guidance": 100.0,
+        "narration_sync": 100.0,
+        "render_robustness": 100.0,
+        "global_theme_consistency": 75.0,
+        "voiceover_sync": 80.0,
+        "layout_safety": 100.0,
+        "narrative_completeness": 100.0,
+        "visual_pattern_density": 100.0,
+        "improvement_over_best": 0.0
+      },
+      "candidate_issue_codes": [],
+      "published": true,
+      "reason": "candidate score 100.0 meets cinematic best threshold 95.0 and is at least current best 100.0",
+      "validation_ok": true,
+      "render_ok": true,
+      "root_files": {
+        "video": "视频.mp4",
+        "script": "最新.py",
+        "problem": "最新问题.md"
+      },
+      "history_files": {
+        "script": "history/20260430-044626.py",
+        "problem": "history/20260430-044626-问题.md",
+        "metadata": "history/20260430-044626-metadata.json",
+        "quality_report": "history/20260430-044626-quality_report.json",
+        "validate": "history/20260430-044626-validate.json"
       }
     }
   ]
