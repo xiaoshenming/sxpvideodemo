@@ -1,7 +1,7 @@
 {
   "topic": "勾股定理几何证明",
   "latest_best": {
-    "timestamp": "20260429-193853",
+    "timestamp": "20260429-195107",
     "quality_score": 90.0,
     "root_files": {
       "video": "视频.mp4",
@@ -30,6 +30,28 @@
         "metadata": "history/20260429-193853-metadata.json",
         "quality_report": "history/20260429-193853-quality_report.json",
         "validate": "history/20260429-193853-validate.json"
+      }
+    },
+    {
+      "timestamp": "20260429-195107",
+      "topic": "勾股定理几何证明",
+      "quality_score": 90.0,
+      "current_best_score": 90.0,
+      "published": true,
+      "reason": "candidate score 90.0 is at least current best 90.0",
+      "validation_ok": true,
+      "render_ok": true,
+      "root_files": {
+        "video": "视频.mp4",
+        "script": "最新.py",
+        "problem": "最新问题.md"
+      },
+      "history_files": {
+        "script": "history/20260429-195107.py",
+        "problem": "history/20260429-195107-问题.md",
+        "metadata": "history/20260429-195107-metadata.json",
+        "quality_report": "history/20260429-195107-quality_report.json",
+        "validate": "history/20260429-195107-validate.json"
       }
     }
   ]
