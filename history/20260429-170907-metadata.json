@@ -1,0 +1,190 @@
+{
+  "request": {
+    "topic": "勾股定理：用几何面积重排证明 a^2+b^2=c^2，要求画面清晰、节奏稳定、适合初中生理解",
+    "audience": "初中/高中学生",
+    "style": "3Blue1Brown 风格，几何直观优先",
+    "aspect_ratio": "16:9",
+    "enable_tts": false,
+    "max_scenes": 3
+  },
+  "plan": {
+    "title": "勾股定理：用几何面积重排证明 a^2+b^2=c^2，要求画",
+    "topic": "勾股定理：用几何面积重排证明 a^2+b^2=c^2，要求画面清晰、节奏稳定、适合初中生理解",
+    "narrative_arc": "问题钩子 → 几何直觉 → 结构揭示 → 方法总结",
+    "palette": {
+      "BG": "#1C1C1C",
+      "PRIMARY": "#58C4DD",
+      "SECONDARY": "#83C167",
+      "ACCENT": "#FFFF00",
+      "MUTED": "#888888"
+    },
+    "scenes": [
+      {
+        "index": 1,
+        "name": "Hook",
+        "teaching_goal": "用一个具体问题激发好奇心，避免直接堆公式。",
+        "visual_design": "暗色背景，标题与一个核心图形从中心浮现。",
+        "narration": "今天我们用直观动画理解：勾股定理：用几何面积重排证明 a^2+b^2=c^2，要求画面清晰、节奏稳定、适合初中生理解",
+        "duration_seconds": 7.0,
+        "sync_units": [
+          {
+            "narration": "今天我们用直观动画理解：勾股定理：用几何面积重排证明 a^2+b^2=c^2，要求画面清晰、节奏稳定、适合初中生理解",
+            "visual_action": "写入标题, 建立当前问题",
+            "reveal_targets": [
+              "title"
+            ],
+            "emphasis_targets": [
+              "title"
+            ]
+          },
+          {
+            "narration": "先明确这一段的目标: 用一个具体问题激发好奇心，避免直接堆公式。",
+            "visual_action": "展示教学目标, 把学生注意力拉到当前任务",
+            "reveal_targets": [
+              "goal"
+            ],
+            "emphasis_targets": [
+              "goal"
+            ]
+          },
+          {
+            "narration": "再看画面设计: 暗色背景，标题与一个核心图形从中心浮现。",
+            "visual_action": "逐步创建核心图形, 再显示视觉说明",
+            "reveal_targets": [
+              "box",
+              "dot",
+              "arrow",
+              "visual"
+            ],
+            "emphasis_targets": [
+              "arrow"
+            ]
+          },
+          {
+            "narration": "这一步的关键是: 用一个具体问题激发好奇心，避免直接堆公式。",
+            "visual_action": "高亮核心结构, 把视觉变化和教学目标对应起来",
+            "reveal_targets": [
+              "visual",
+              "arrow"
+            ],
+            "emphasis_targets": [
+              "visual",
+              "arrow"
+            ]
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "name": "GeometryFirst",
+        "teaching_goal": "先建立几何/画面直觉，再进入符号表达。",
+        "visual_design": "左侧图形演化，右侧只保留一个关键公式或关键词。",
+        "narration": "先看形状如何变化，再问为什么它必然成立。",
+        "duration_seconds": 10.0,
+        "sync_units": [
+          {
+            "narration": "先看形状如何变化，再问为什么它必然成立。",
+            "visual_action": "写入标题, 建立当前问题",
+            "reveal_targets": [
+              "title"
+            ],
+            "emphasis_targets": [
+              "title"
+            ]
+          },
+          {
+            "narration": "先明确这一段的目标: 先建立几何/画面直觉，再进入符号表达。",
+            "visual_action": "展示教学目标, 把学生注意力拉到当前任务",
+            "reveal_targets": [
+              "goal"
+            ],
+            "emphasis_targets": [
+              "goal"
+            ]
+          },
+          {
+            "narration": "再看画面设计: 左侧图形演化，右侧只保留一个关键公式或关键词。",
+            "visual_action": "逐步创建核心图形, 再显示视觉说明",
+            "reveal_targets": [
+              "box",
+              "dot",
+              "arrow",
+              "visual"
+            ],
+            "emphasis_targets": [
+              "arrow"
+            ]
+          },
+          {
+            "narration": "这一步的关键是: 先建立几何/画面直觉，再进入符号表达。",
+            "visual_action": "高亮核心结构, 把视觉变化和教学目标对应起来",
+            "reveal_targets": [
+              "visual",
+              "arrow"
+            ],
+            "emphasis_targets": [
+              "visual",
+              "arrow"
+            ]
+          }
+        ]
+      },
+      {
+        "index": 3,
+        "name": "AhaMoment",
+        "teaching_goal": "制造 aha moment，把直觉连接到数学结构。",
+        "visual_design": "用高亮、Brace、箭头强调结构不变量。",
+        "narration": "关键不是记住结论，而是看见不变量。",
+        "duration_seconds": 12.0,
+        "sync_units": [
+          {
+            "narration": "关键不是记住结论，而是看见不变量。",
+            "visual_action": "写入标题, 建立当前问题",
+            "reveal_targets": [
+              "title"
+            ],
+            "emphasis_targets": [
+              "title"
+            ]
+          },
+          {
+            "narration": "先明确这一段的目标: 制造 aha moment，把直觉连接到数学结构。",
+            "visual_action": "展示教学目标, 把学生注意力拉到当前任务",
+            "reveal_targets": [
+              "goal"
+            ],
+            "emphasis_targets": [
+              "goal"
+            ]
+          },
+          {
+            "narration": "再看画面设计: 用高亮、Brace、箭头强调结构不变量。",
+            "visual_action": "逐步创建核心图形, 再显示视觉说明",
+            "reveal_targets": [
+              "box",
+              "dot",
+              "arrow",
+              "visual"
+            ],
+            "emphasis_targets": [
+              "arrow"
+            ]
+          },
+          {
+            "narration": "这一步的关键是: 制造 aha moment，把直觉连接到数学结构。",
+            "visual_action": "高亮核心结构, 把视觉变化和教学目标对应起来",
+            "reveal_targets": [
+              "visual",
+              "arrow"
+            ],
+            "emphasis_targets": [
+              "visual",
+              "arrow"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "engine": "deterministic"
+}
