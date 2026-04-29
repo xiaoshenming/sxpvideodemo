@@ -1,0 +1,12 @@
+{
+  "ok": true,
+  "issues": [
+    {
+      "level": "warning",
+      "code": "no-clean-exit",
+      "message": "建议每个场景末尾清理 mobjects",
+      "repair_hint": "在每个 Scene 末尾用 FadeOut(VGroup(*self.mobjects)) 清理画面，并紧跟 self.wait(...)。",
+      "pattern_ref": "knowledge/patterns/play-wait-cadence.md"
+    }
+  ]
+}
