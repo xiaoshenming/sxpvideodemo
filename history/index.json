@@ -1,15 +1,19 @@
 {
   "topic": "勾股定理几何证明",
   "summary": {
-    "snapshot_count": 21,
+    "snapshot_count": 22,
     "published_count": 21,
-    "archived_only_count": 0,
+    "archived_only_count": 1,
     "best_quality_score": 100.0,
     "latest_quality_score": 100.0,
-    "candidate_issue_counts": {},
-    "latest_candidate_issue_codes": [],
+    "candidate_issue_counts": {
+      "objective_gate:missing-objective-quality-signals": 1
+    },
+    "latest_candidate_issue_codes": [
+      "objective_gate:missing-objective-quality-signals"
+    ],
     "weak_quality_dimension_counts": {
-      "improvement_over_best": 17
+      "improvement_over_best": 18
     },
     "latest_weak_quality_dimensions": [
       "improvement_over_best"
@@ -17,11 +21,13 @@
     "next_candidate_minimum_score": 100.0,
     "latest_score_gap_to_next_publish": 0.0,
     "quality_regression_count": 0,
-    "cinematic_ready_count": 17,
+    "cinematic_ready_count": 18,
     "publish_gate": {
       "best_publish_score": 95.0,
       "first_snapshot_can_publish_without_existing_best": true,
-      "requires_candidate_at_least_current_best": true
+      "requires_candidate_at_least_current_best": true,
+      "minimum_sync_units_per_scene": 2.0,
+      "minimum_voiceover_scene_coverage": 0.8
     },
     "quality_dimension_averages": {
       "geometry_rearrangement": 100.0,
@@ -926,6 +932,60 @@
         "quality_report": "history/20260430-102039-quality_report.json",
         "manifest": "history/20260430-102039-sample_manifest.json",
         "validate": "history/20260430-102039-validate.json"
+      },
+      "sample_manifest": {
+        "topic": "勾股定理几何证明",
+        "engine": "deterministic",
+        "scene_count": 6,
+        "quality_score": 100.0,
+        "script_path": "script.py",
+        "metadata_path": "metadata.json",
+        "quality_report_path": "quality_report.json"
+      }
+    },
+    {
+      "timestamp": "20260430-104706",
+      "topic": "勾股定理几何证明",
+      "quality_score": 100.0,
+      "current_best_score": 100.0,
+      "quality_delta_from_current_best": 0.0,
+      "improvement_over_best": 0.0,
+      "cinematic_best_threshold": 95.0,
+      "meets_cinematic_best_threshold": true,
+      "quality_dimensions": {
+        "geometry_rearrangement": 100.0,
+        "cinematic_composition": 100.0,
+        "attention_guidance": 100.0,
+        "narration_sync": 100.0,
+        "render_robustness": 100.0,
+        "global_theme_consistency": 75.0,
+        "voiceover_sync": 80.0,
+        "layout_safety": 100.0,
+        "narrative_completeness": 100.0,
+        "visual_pattern_density": 100.0,
+        "improvement_over_best": 0.0
+      },
+      "weak_quality_dimensions": [
+        "improvement_over_best"
+      ],
+      "objective_quality_signal_blockers": [
+        "missing-objective-quality-signals"
+      ],
+      "candidate_issue_codes": [
+        "objective_gate:missing-objective-quality-signals"
+      ],
+      "published": false,
+      "reason": "blocked by objective quality signal missing-objective-quality-signals",
+      "validation_ok": true,
+      "render_ok": true,
+      "root_files": {},
+      "history_files": {
+        "script": "history/20260430-104706.py",
+        "problem": "history/20260430-104706-问题.md",
+        "metadata": "history/20260430-104706-metadata.json",
+        "quality_report": "history/20260430-104706-quality_report.json",
+        "manifest": "history/20260430-104706-sample_manifest.json",
+        "validate": "history/20260430-104706-validate.json"
       },
       "sample_manifest": {
         "topic": "勾股定理几何证明",
