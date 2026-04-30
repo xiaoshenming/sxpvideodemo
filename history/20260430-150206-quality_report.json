@@ -1,0 +1,48 @@
+{
+  "score": 100.0,
+  "geometry_rearrangement": 40.0,
+  "cinematic_composition": 100.0,
+  "attention_guidance": 100.0,
+  "narration_sync": 100.0,
+  "render_robustness": 100.0,
+  "global_theme_consistency": 60.0,
+  "voiceover_sync": 100.0,
+  "layout_safety": 55.0,
+  "narrative_completeness": 95.0,
+  "visual_pattern_density": 20.0,
+  "topic_generalization": 100.0,
+  "improvement_over_best": 0.0,
+  "strengths": [
+    "至少包含钩子、核心解释、总结等多个场景",
+    "强调可视化推理/结构化呈现，符合通用 Manim 视频优势",
+    "包含 aha moment / 不变量揭示",
+    "包含统一色板",
+    "visual_design 明确安全布局 helper 契约",
+    "sync_units 明确 shuxuepai 聚焦 helper 契约",
+    "sync_units 分段密度满足普通场景至少 3 段"
+  ],
+  "weaknesses": [
+    "老师参考代码抽象维度不足: global_theme_consistency, layout_safety, visual_pattern_density"
+  ],
+  "next_actions": [
+    "把参考代码优点转成 sxpagents 自己的 SXPBaseScene/theme/layout_template/sync_units/visual_patterns 契约，不照搬 shuxuepai 项目架构"
+  ],
+  "scene_count": 4,
+  "voiceover_segments": 0,
+  "play_count": 17,
+  "wait_count": 20,
+  "visual_density": 8.75,
+  "narrative_depth": 37.0,
+  "exercise_or_reflection": false,
+  "reference_surpass_score": 53.6,
+  "reference_surpass_ok": false,
+  "reference_blocking_reasons": [
+    "scene_count_below_reference_floor",
+    "sync_segments_below_reference",
+    "play_count_below_reference",
+    "wait_count_below_reference",
+    "narrative_depth_below_reference",
+    "missing_exercise_or_reflection",
+    "reference_surpass_score_below_100"
+  ]
+}

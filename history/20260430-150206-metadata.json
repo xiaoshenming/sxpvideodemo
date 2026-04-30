@@ -1,0 +1,340 @@
+{
+  "request": {
+    "topic": "复数的引入：从 x^2+1=0 到复数相等条件",
+    "domain": "auto",
+    "audience": "初中/高中学生",
+    "style": "3Blue1Brown 风格，几何直观优先",
+    "aspect_ratio": "16:9",
+    "enable_tts": false,
+    "max_scenes": 10
+  },
+  "plan": {
+    "title": "复数的引入：从 x^2+1=0 到复数相等条件",
+    "topic": "复数的引入：从 x^2+1=0 到复数相等条件",
+    "narrative_arc": "问题钩子 → 几何直觉 → 结构揭示 → 方法总结",
+    "geometry_rearrangement": "先构造可感知的几何对象或函数图像, 再通过移动、形变或分组对比揭示不变量。",
+    "camera_plan": [
+      "Hook: 中景建立问题对象, 不提前堆公式。",
+      "Build: 局部放大关键结构变化。",
+      "Aha: 在 reveal 后停顿 >= 2.0 秒。",
+      "Recap: 拉回全景总结视觉不变量。"
+    ],
+    "safe_layout_contract": "所有 Text/MathTex/VGroup/Group 必须进入 full_canvas 12.0x6.6, 首次显示前使用 safe_text_box/fit_to_canvas/safe_group 或等价安全布局。",
+    "attention_plan": [
+      "新对象出现时使用 emphasize_current 标出当前焦点。",
+      "非当前对象使用 dim_others 降到 0.35-0.6 透明度。",
+      "关键 reveal 后使用 restore_opacity 恢复整体关系。"
+    ],
+    "subcaption_timeline": [
+      "每个核心动画前调用 self.add_subcaption(...)。",
+      "关键 reveal 后字幕保留至少 1.5 秒。",
+      "aha moment 后字幕/画面停顿至少 2.0 秒。"
+    ],
+    "quality_claims": [
+      "公式或结论必须由画面动作推出来。",
+      "每个场景只推进一个教学动作。",
+      "结尾必须把视觉不变量和最终结论对齐。"
+    ],
+    "golden_benchmark_targets": [
+      "输出可与项目 golden reference 做结构化对比的教学路径、视觉 pattern 和安全布局目标。",
+      "结论必须由画面动作推出, 不能退回 PPT 式文本堆叠。"
+    ],
+    "golden_benchmark_gaps": [
+      "若没有同题 golden reference, 先记录可复用的场景数量、动态证明、渲染稳定性和发布门槛。"
+    ],
+    "palette": {
+      "BG": "#1C1C1C",
+      "PRIMARY": "#58C4DD",
+      "SECONDARY": "#83C167",
+      "ACCENT": "#FFFF00",
+      "MUTED": "#888888"
+    },
+    "scenes": [
+      {
+        "index": 1,
+        "name": "Hook",
+        "teaching_goal": "用一个具体问题激发好奇心，避免直接堆公式。",
+        "scene_goal": "用一个具体问题激发好奇心，避免直接堆公式。",
+        "visual_design": "暗色背景，标题与一个核心图形从中心浮现。",
+        "narration": "今天我们用直观动画理解：复数的引入：从 x^2+1=0 到复数相等条件",
+        "voiceover": "今天我们用直观动画理解：复数的引入：从 x^2+1=0 到复数相等条件",
+        "duration_seconds": 7.0,
+        "layout_template": "split_explain_visual",
+        "visual_patterns": [
+          "problem_bubble",
+          "focus_highlight",
+          "invariant_frame",
+          "recap_board"
+        ],
+        "attention_targets": [
+          "title",
+          "core_visual",
+          "current_invariant",
+          "takeaway"
+        ],
+        "safety_contracts": [
+          "SXPGlobalConfig 统一 palette/theme, 禁止每个 Scene 随机配色",
+          "SXPBaseScene 槽位布局: 16:9 可左右槽位, 但几何证明优先全屏主体",
+          "中文解释只用 Text/MarkupText + safe_text_box",
+          "Text/MathTex/VGroup 首次显示前必须 fit_to_canvas/safe_group",
+          "MathTex 只承载纯数学, 不放中文"
+        ],
+        "sync_units": [
+          {
+            "narration": "今天我们用直观动画理解：复数的引入：从 x^2+1=0 到复数相等条件",
+            "visual_action": "写入标题, 建立当前问题, 使用 emphasize_current(title) 聚焦标题, dim_others 弱化背景, restore_opacity 保持收束节奏",
+            "reveal_targets": [
+              "title"
+            ],
+            "emphasis_targets": [
+              "title"
+            ]
+          },
+          {
+            "narration": "先明确这一段的目标: 用一个具体问题激发好奇心，避免直接堆公式。",
+            "visual_action": "展示教学目标, 把学生注意力拉到当前任务, emphasize_current(goal) 后用 dim_others/restore_opacity 管理注意力",
+            "reveal_targets": [
+              "goal"
+            ],
+            "emphasis_targets": [
+              "goal"
+            ]
+          },
+          {
+            "narration": "再看画面设计: 暗色背景，标题与一个核心图形从中心浮现。",
+            "visual_action": "逐步创建核心图形, 再显示视觉说明, emphasize_current(visual), dim_others(keep=visual), restore_opacity(content_group)",
+            "reveal_targets": [
+              "box",
+              "dot",
+              "arrow",
+              "visual"
+            ],
+            "emphasis_targets": [
+              "arrow"
+            ]
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "name": "GeometryFirst",
+        "teaching_goal": "先建立几何/画面直觉，再进入符号表达。",
+        "scene_goal": "先建立几何/画面直觉，再进入符号表达。",
+        "visual_design": "左侧图形演化，右侧只保留一个关键公式或关键词。",
+        "narration": "先看形状如何变化，再问为什么它必然成立。",
+        "voiceover": "先看形状如何变化，再问为什么它必然成立。",
+        "duration_seconds": 10.0,
+        "layout_template": "full_screen_geometry",
+        "visual_patterns": [
+          "problem_bubble",
+          "focus_highlight",
+          "invariant_frame",
+          "recap_board"
+        ],
+        "attention_targets": [
+          "title",
+          "core_visual",
+          "current_invariant",
+          "takeaway"
+        ],
+        "safety_contracts": [
+          "SXPGlobalConfig 统一 palette/theme, 禁止每个 Scene 随机配色",
+          "SXPBaseScene 槽位布局: 16:9 可左右槽位, 但几何证明优先全屏主体",
+          "中文解释只用 Text/MarkupText + safe_text_box",
+          "Text/MathTex/VGroup 首次显示前必须 fit_to_canvas/safe_group",
+          "MathTex 只承载纯数学, 不放中文"
+        ],
+        "sync_units": [
+          {
+            "narration": "先看形状如何变化，再问为什么它必然成立。",
+            "visual_action": "写入标题, 建立当前问题, 使用 emphasize_current(title) 聚焦标题, dim_others 弱化背景, restore_opacity 保持收束节奏",
+            "reveal_targets": [
+              "title"
+            ],
+            "emphasis_targets": [
+              "title"
+            ]
+          },
+          {
+            "narration": "先明确这一段的目标: 先建立几何/画面直觉，再进入符号表达。",
+            "visual_action": "展示教学目标, 把学生注意力拉到当前任务, emphasize_current(goal) 后用 dim_others/restore_opacity 管理注意力",
+            "reveal_targets": [
+              "goal"
+            ],
+            "emphasis_targets": [
+              "goal"
+            ]
+          },
+          {
+            "narration": "再看画面设计: 左侧图形演化，右侧只保留一个关键公式或关键词。",
+            "visual_action": "逐步创建核心图形, 再显示视觉说明, emphasize_current(visual), dim_others(keep=visual), restore_opacity(content_group)",
+            "reveal_targets": [
+              "box",
+              "dot",
+              "arrow",
+              "visual"
+            ],
+            "emphasis_targets": [
+              "arrow"
+            ]
+          },
+          {
+            "narration": "这一步的关键是: 先建立几何/画面直觉，再进入符号表达。",
+            "visual_action": "高亮核心结构, 把视觉变化和教学目标对应起来, emphasize_current(visual) 并配合 dim_others/restore_opacity",
+            "reveal_targets": [
+              "visual",
+              "arrow"
+            ],
+            "emphasis_targets": [
+              "visual",
+              "arrow"
+            ]
+          }
+        ]
+      },
+      {
+        "index": 3,
+        "name": "AhaMoment",
+        "teaching_goal": "制造 aha moment，把直觉连接到数学结构。",
+        "scene_goal": "制造 aha moment，把直觉连接到数学结构。",
+        "visual_design": "用高亮、Brace、箭头强调结构不变量。",
+        "narration": "关键不是记住结论，而是看见不变量。",
+        "voiceover": "关键不是记住结论，而是看见不变量。",
+        "duration_seconds": 12.0,
+        "layout_template": "full_screen_geometry",
+        "visual_patterns": [
+          "problem_bubble",
+          "focus_highlight",
+          "invariant_frame",
+          "recap_board"
+        ],
+        "attention_targets": [
+          "title",
+          "core_visual",
+          "current_invariant",
+          "takeaway"
+        ],
+        "safety_contracts": [
+          "SXPGlobalConfig 统一 palette/theme, 禁止每个 Scene 随机配色",
+          "SXPBaseScene 槽位布局: 16:9 可左右槽位, 但几何证明优先全屏主体",
+          "中文解释只用 Text/MarkupText + safe_text_box",
+          "Text/MathTex/VGroup 首次显示前必须 fit_to_canvas/safe_group",
+          "MathTex 只承载纯数学, 不放中文"
+        ],
+        "sync_units": [
+          {
+            "narration": "关键不是记住结论，而是看见不变量。",
+            "visual_action": "写入标题, 建立当前问题, 使用 emphasize_current(title) 聚焦标题, dim_others 弱化背景, restore_opacity 保持收束节奏",
+            "reveal_targets": [
+              "title"
+            ],
+            "emphasis_targets": [
+              "title"
+            ]
+          },
+          {
+            "narration": "先明确这一段的目标: 制造 aha moment，把直觉连接到数学结构。",
+            "visual_action": "展示教学目标, 把学生注意力拉到当前任务, emphasize_current(goal) 后用 dim_others/restore_opacity 管理注意力",
+            "reveal_targets": [
+              "goal"
+            ],
+            "emphasis_targets": [
+              "goal"
+            ]
+          },
+          {
+            "narration": "再看画面设计: 用高亮、Brace、箭头强调结构不变量。",
+            "visual_action": "逐步创建核心图形, 再显示视觉说明, emphasize_current(visual), dim_others(keep=visual), restore_opacity(content_group)",
+            "reveal_targets": [
+              "box",
+              "dot",
+              "arrow",
+              "visual"
+            ],
+            "emphasis_targets": [
+              "arrow"
+            ]
+          },
+          {
+            "narration": "这一步的关键是: 制造 aha moment，把直觉连接到数学结构。",
+            "visual_action": "高亮核心结构, 把视觉变化和教学目标对应起来, emphasize_current(visual) 并配合 dim_others/restore_opacity",
+            "reveal_targets": [
+              "visual",
+              "arrow"
+            ],
+            "emphasis_targets": [
+              "visual",
+              "arrow"
+            ]
+          }
+        ]
+      },
+      {
+        "index": 4,
+        "name": "Summary",
+        "teaching_goal": "总结并给出可迁移的解题/理解方法。",
+        "scene_goal": "总结并给出可迁移的解题/理解方法。",
+        "visual_design": "三条 takeaway 依次出现，保留大量留白。",
+        "narration": "最后，把这个方法迁移到新的题目中。",
+        "voiceover": "最后，把这个方法迁移到新的题目中。",
+        "duration_seconds": 8.0,
+        "layout_template": "recap_board",
+        "visual_patterns": [
+          "problem_bubble",
+          "focus_highlight",
+          "invariant_frame",
+          "recap_board"
+        ],
+        "attention_targets": [
+          "title",
+          "core_visual",
+          "current_invariant",
+          "takeaway"
+        ],
+        "safety_contracts": [
+          "SXPGlobalConfig 统一 palette/theme, 禁止每个 Scene 随机配色",
+          "SXPBaseScene 槽位布局: 16:9 可左右槽位, 但几何证明优先全屏主体",
+          "中文解释只用 Text/MarkupText + safe_text_box",
+          "Text/MathTex/VGroup 首次显示前必须 fit_to_canvas/safe_group",
+          "MathTex 只承载纯数学, 不放中文"
+        ],
+        "sync_units": [
+          {
+            "narration": "最后，把这个方法迁移到新的题目中。",
+            "visual_action": "写入标题, 建立当前问题, 使用 emphasize_current(title) 聚焦标题, dim_others 弱化背景, restore_opacity 保持收束节奏",
+            "reveal_targets": [
+              "title"
+            ],
+            "emphasis_targets": [
+              "title"
+            ]
+          },
+          {
+            "narration": "先明确这一段的目标: 总结并给出可迁移的解题/理解方法。",
+            "visual_action": "展示教学目标, 把学生注意力拉到当前任务, emphasize_current(goal) 后用 dim_others/restore_opacity 管理注意力",
+            "reveal_targets": [
+              "goal"
+            ],
+            "emphasis_targets": [
+              "goal"
+            ]
+          },
+          {
+            "narration": "再看画面设计: 三条 takeaway 依次出现，保留大量留白。",
+            "visual_action": "逐步创建核心图形, 再显示视觉说明, emphasize_current(visual), dim_others(keep=visual), restore_opacity(content_group)",
+            "reveal_targets": [
+              "box",
+              "dot",
+              "arrow",
+              "visual"
+            ],
+            "emphasis_targets": [
+              "arrow"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "engine": "deterministic"
+}
