@@ -1,0 +1,26 @@
+{
+  "score": 100.0,
+  "geometry_rearrangement": 100.0,
+  "cinematic_composition": 100.0,
+  "attention_guidance": 100.0,
+  "narration_sync": 100.0,
+  "render_robustness": 100.0,
+  "global_theme_consistency": 75.0,
+  "voiceover_sync": 80.0,
+  "layout_safety": 100.0,
+  "narrative_completeness": 100.0,
+  "visual_pattern_density": 100.0,
+  "improvement_over_best": 0.0,
+  "strengths": [
+    "至少包含钩子、核心解释、总结等多个场景",
+    "强调几何直觉，符合 Manim 教学动画优势",
+    "包含 aha moment / 不变量揭示",
+    "包含统一色板",
+    "visual_design 明确安全布局 helper 契约",
+    "sync_units 明确 shuxuepai 聚焦 helper 契约",
+    "sync_units 分段密度满足普通场景至少 3 段",
+    "老师参考代码的 theme、槽位布局、配音节奏、叙事和 visual pattern 已抽象进 sxpagents 自有评分体系"
+  ],
+  "weaknesses": [],
+  "next_actions": []
+}
