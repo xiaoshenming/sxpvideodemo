@@ -1,0 +1,31 @@
+{
+  "surpasses_reference": true,
+  "reference_surpass_score": 108.9,
+  "blocking_reasons": [],
+  "candidate_metrics": {
+    "line_count": 746,
+    "scene_count": 10,
+    "voiceover_segments": 0,
+    "subcaption_segments": 38,
+    "sync_segments": 38,
+    "play_count": 71,
+    "wait_count": 80,
+    "visual_call_count": 82,
+    "visual_density": 8.2,
+    "narrative_depth": 100.0,
+    "exercise_or_reflection": true
+  },
+  "reference_metrics": {
+    "line_count": 430,
+    "scene_count": 10,
+    "voiceover_segments": 19,
+    "subcaption_segments": 0,
+    "sync_segments": 19,
+    "play_count": 64,
+    "wait_count": 27,
+    "visual_call_count": 51,
+    "visual_density": 5.1,
+    "narrative_depth": 100.0,
+    "exercise_or_reflection": true
+  }
+}

@@ -1,8 +1,8 @@
 {
-  "topic": "复数的引入：从 x^2+1=0 到复数相等条件",
+  "topic": "动量守恒：从碰撞实验到火箭反冲",
   "summary": {
-    "snapshot_count": 25,
-    "published_count": 22,
+    "snapshot_count": 27,
+    "published_count": 24,
     "archived_only_count": 3,
     "best_quality_score": 100.0,
     "latest_quality_score": 100.0,
@@ -16,37 +16,48 @@
       "reference_gate:sync_segments_below_reference": 1,
       "reference_gate:wait_count_below_reference": 1
     },
-    "latest_candidate_issue_codes": [
-      "reference_gate:scene_count_below_reference_floor",
-      "reference_gate:sync_segments_below_reference",
-      "reference_gate:play_count_below_reference",
-      "reference_gate:wait_count_below_reference",
-      "reference_gate:narrative_depth_below_reference",
-      "reference_gate:missing_exercise_or_reflection",
-      "reference_gate:reference_surpass_score_below_100"
-    ],
+    "latest_candidate_issue_codes": [],
     "objective_quality_signal_blocker_counts": {
       "missing-objective-quality-signals": 2
     },
     "latest_objective_quality_signal_blockers": [],
+    "reference_quality_blocker_counts": {
+      "missing_exercise_or_reflection": 1,
+      "narrative_depth_below_reference": 1,
+      "play_count_below_reference": 1,
+      "reference_surpass_score_below_100": 1,
+      "scene_count_below_reference_floor": 1,
+      "sync_segments_below_reference": 1,
+      "wait_count_below_reference": 1
+    },
+    "latest_reference_quality_blockers": [],
+    "latest_reference_quality_metrics": {
+      "scene_count": 10.0,
+      "voiceover_segments": 38.0,
+      "play_count": 71.0,
+      "wait_count": 80.0,
+      "visual_density": 8.2,
+      "narrative_depth": 100.0,
+      "exercise_or_reflection": 1.0,
+      "topic_generalization": 100.0,
+      "reference_surpass_score": 108.9
+    },
     "weak_quality_dimension_counts": {
-      "geometry_rearrangement": 2,
+      "geometry_rearrangement": 4,
       "global_theme_consistency": 1,
-      "improvement_over_best": 21,
+      "improvement_over_best": 23,
       "layout_safety": 2,
-      "visual_pattern_density": 2
+      "visual_pattern_density": 4
     },
     "latest_weak_quality_dimensions": [
       "geometry_rearrangement",
-      "global_theme_consistency",
-      "layout_safety",
       "visual_pattern_density",
       "improvement_over_best"
     ],
     "next_candidate_minimum_score": 100.0,
     "latest_score_gap_to_next_publish": 0.0,
     "quality_regression_count": 0,
-    "cinematic_ready_count": 21,
+    "cinematic_ready_count": 23,
     "publish_gate": {
       "best_publish_score": 95.0,
       "first_snapshot_can_publish_without_existing_best": true,
@@ -55,16 +66,16 @@
       "minimum_voiceover_scene_coverage": 0.8
     },
     "quality_dimension_averages": {
-      "geometry_rearrangement": 92.4,
+      "geometry_rearrangement": 87.8,
       "cinematic_composition": 100.0,
       "attention_guidance": 100.0,
       "narration_sync": 100.0,
-      "render_robustness": 100.0,
-      "global_theme_consistency": 74.8,
-      "voiceover_sync": 82.9,
-      "layout_safety": 96.2,
+      "render_robustness": 99.1,
+      "global_theme_consistency": 75.7,
+      "voiceover_sync": 84.3,
+      "layout_safety": 95.2,
       "narrative_completeness": 99.0,
-      "visual_pattern_density": 92.4,
+      "visual_pattern_density": 89.6,
       "improvement_over_best": 0.0
     },
     "latest_quality_dimensions": {
@@ -72,12 +83,12 @@
       "cinematic_composition": 100.0,
       "attention_guidance": 100.0,
       "narration_sync": 100.0,
-      "render_robustness": 100.0,
-      "global_theme_consistency": 60.0,
+      "render_robustness": 90.0,
+      "global_theme_consistency": 85.0,
       "voiceover_sync": 100.0,
-      "layout_safety": 55.0,
-      "narrative_completeness": 95.0,
-      "visual_pattern_density": 20.0,
+      "layout_safety": 85.0,
+      "narrative_completeness": 100.0,
+      "visual_pattern_density": 60.0,
       "improvement_over_best": 0.0
     },
     "latest_render_status": {
@@ -86,24 +97,42 @@
         "Scene_01_Hook",
         "Scene_02_GeometryFirst",
         "Scene_03_AhaMoment",
-        "Scene_04_Summary"
+        "Scene_04_ModelBuild",
+        "Scene_05_SymbolBridge",
+        "Scene_06_WorkedExample",
+        "Scene_07_ContrastCase",
+        "Scene_08_CommonMistake",
+        "Scene_09_ReflectionChallenge",
+        "Scene_10_Summary"
       ],
       "successful_scenes": [
         "Scene_01_Hook",
         "Scene_02_GeometryFirst",
         "Scene_03_AhaMoment",
-        "Scene_04_Summary"
+        "Scene_04_ModelBuild",
+        "Scene_05_SymbolBridge",
+        "Scene_06_WorkedExample",
+        "Scene_07_ContrastCase",
+        "Scene_08_CommonMistake",
+        "Scene_09_ReflectionChallenge",
+        "Scene_10_Summary"
       ],
       "status_paths": [
-        "outputs/worker5-reference-candidate-20260430-150206/render-Scene_01_Hook.log",
-        "outputs/worker5-reference-candidate-20260430-150206/render-Scene_02_GeometryFirst.log",
-        "outputs/worker5-reference-candidate-20260430-150206/render-Scene_03_AhaMoment.log",
-        "outputs/worker5-reference-candidate-20260430-150206/render-Scene_04_Summary.log"
+        "outputs/worker5-momentum-20260430-165817/render-Scene_01_Hook.log",
+        "outputs/worker5-momentum-20260430-165817/render-Scene_02_GeometryFirst.log",
+        "outputs/worker5-momentum-20260430-165817/render-Scene_03_AhaMoment.log",
+        "outputs/worker5-momentum-20260430-165817/render-Scene_04_ModelBuild.log",
+        "outputs/worker5-momentum-20260430-165817/render-Scene_05_SymbolBridge.log",
+        "outputs/worker5-momentum-20260430-165817/render-Scene_06_WorkedExample.log",
+        "outputs/worker5-momentum-20260430-165817/render-Scene_07_ContrastCase.log",
+        "outputs/worker5-momentum-20260430-165817/render-Scene_08_CommonMistake.log",
+        "outputs/worker5-momentum-20260430-165817/render-Scene_09_ReflectionChallenge.log",
+        "outputs/worker5-momentum-20260430-165817/render-Scene_10_Summary.log"
       ]
     }
   },
   "latest_best": {
-    "timestamp": "20260430-142802",
+    "timestamp": "20260430-165817",
     "quality_score": 100.0,
     "root_files": {
       "video": "视频.mp4",
@@ -1248,6 +1277,232 @@
         "quality_score": 100.0,
         "quality_signals": {
           "sync_units_per_scene": 3.5,
+          "voiceover_scene_coverage": 1.0
+        },
+        "script_path": "script.py",
+        "metadata_path": "metadata.json",
+        "quality_report_path": "quality_report.json",
+        "reference_eval_path": "reference_eval.json"
+      }
+    },
+    {
+      "timestamp": "20260430-164724",
+      "topic": "动量守恒：从碰撞实验到火箭反冲",
+      "quality_score": 100.0,
+      "current_best_score": null,
+      "quality_delta_from_current_best": null,
+      "improvement_over_best": null,
+      "cinematic_best_threshold": 95.0,
+      "meets_cinematic_best_threshold": true,
+      "quality_dimensions": {
+        "geometry_rearrangement": 40.0,
+        "cinematic_composition": 100.0,
+        "attention_guidance": 100.0,
+        "narration_sync": 100.0,
+        "render_robustness": 90.0,
+        "global_theme_consistency": 85.0,
+        "voiceover_sync": 100.0,
+        "layout_safety": 85.0,
+        "narrative_completeness": 100.0,
+        "visual_pattern_density": 60.0,
+        "improvement_over_best": 0.0
+      },
+      "weak_quality_dimensions": [
+        "geometry_rearrangement",
+        "visual_pattern_density",
+        "improvement_over_best"
+      ],
+      "objective_quality_signal_blockers": [],
+      "reference_quality_blockers": [],
+      "reference_quality_metrics": {
+        "scene_count": 10.0,
+        "voiceover_segments": 37.0,
+        "play_count": 71.0,
+        "wait_count": 80.0,
+        "visual_density": 8.2,
+        "narrative_depth": 100.0,
+        "exercise_or_reflection": 1.0,
+        "topic_generalization": 100.0,
+        "reference_surpass_score": 108.9
+      },
+      "candidate_issue_codes": [],
+      "published": true,
+      "reason": "candidate is first snapshot",
+      "validation_ok": true,
+      "render_ok": true,
+      "render_status": {
+        "ok": true,
+        "declared_scenes": [
+          "Scene_01_Hook",
+          "Scene_02_GeometryFirst",
+          "Scene_03_AhaMoment",
+          "Scene_04_ModelBuild",
+          "Scene_05_SymbolBridge",
+          "Scene_06_WorkedExample",
+          "Scene_07_ContrastCase",
+          "Scene_08_CommonMistake",
+          "Scene_09_ReflectionChallenge",
+          "Scene_10_Summary"
+        ],
+        "successful_scenes": [
+          "Scene_01_Hook",
+          "Scene_02_GeometryFirst",
+          "Scene_03_AhaMoment",
+          "Scene_04_ModelBuild",
+          "Scene_05_SymbolBridge",
+          "Scene_06_WorkedExample",
+          "Scene_07_ContrastCase",
+          "Scene_08_CommonMistake",
+          "Scene_09_ReflectionChallenge",
+          "Scene_10_Summary"
+        ],
+        "status_paths": [
+          "outputs/worker5-momentum-20260430-164724/render-Scene_01_Hook.log",
+          "outputs/worker5-momentum-20260430-164724/render-Scene_02_GeometryFirst.log",
+          "outputs/worker5-momentum-20260430-164724/render-Scene_03_AhaMoment.log",
+          "outputs/worker5-momentum-20260430-164724/render-Scene_04_ModelBuild.log",
+          "outputs/worker5-momentum-20260430-164724/render-Scene_05_SymbolBridge.log",
+          "outputs/worker5-momentum-20260430-164724/render-Scene_06_WorkedExample.log",
+          "outputs/worker5-momentum-20260430-164724/render-Scene_07_ContrastCase.log",
+          "outputs/worker5-momentum-20260430-164724/render-Scene_08_CommonMistake.log",
+          "outputs/worker5-momentum-20260430-164724/render-Scene_09_ReflectionChallenge.log",
+          "outputs/worker5-momentum-20260430-164724/render-Scene_10_Summary.log"
+        ]
+      },
+      "root_files": {
+        "video": "视频.mp4",
+        "script": "最新.py",
+        "problem": "最新问题.md"
+      },
+      "history_files": {
+        "script": "history/20260430-164724.py",
+        "problem": "history/20260430-164724-问题.md",
+        "metadata": "history/20260430-164724-metadata.json",
+        "quality_report": "history/20260430-164724-quality_report.json",
+        "manifest": "history/20260430-164724-sample_manifest.json",
+        "validate": "history/20260430-164724-validate.json",
+        "reference_eval": "history/20260430-164724-reference_eval.json"
+      },
+      "sample_manifest": {
+        "topic": "动量守恒：从碰撞实验到火箭反冲",
+        "engine": "deterministic",
+        "scene_count": 10,
+        "quality_score": 100.0,
+        "quality_signals": {
+          "sync_units_per_scene": 3.6,
+          "voiceover_scene_coverage": 1.0
+        },
+        "script_path": "script.py",
+        "metadata_path": "metadata.json",
+        "quality_report_path": "quality_report.json",
+        "reference_eval_path": "reference_eval.json"
+      }
+    },
+    {
+      "timestamp": "20260430-165817",
+      "topic": "动量守恒：从碰撞实验到火箭反冲",
+      "quality_score": 100.0,
+      "current_best_score": 100.0,
+      "quality_delta_from_current_best": 0.0,
+      "improvement_over_best": 0.0,
+      "cinematic_best_threshold": 95.0,
+      "meets_cinematic_best_threshold": true,
+      "quality_dimensions": {
+        "geometry_rearrangement": 40.0,
+        "cinematic_composition": 100.0,
+        "attention_guidance": 100.0,
+        "narration_sync": 100.0,
+        "render_robustness": 90.0,
+        "global_theme_consistency": 85.0,
+        "voiceover_sync": 100.0,
+        "layout_safety": 85.0,
+        "narrative_completeness": 100.0,
+        "visual_pattern_density": 60.0,
+        "improvement_over_best": 0.0
+      },
+      "weak_quality_dimensions": [
+        "geometry_rearrangement",
+        "visual_pattern_density",
+        "improvement_over_best"
+      ],
+      "objective_quality_signal_blockers": [],
+      "reference_quality_blockers": [],
+      "reference_quality_metrics": {
+        "scene_count": 10.0,
+        "voiceover_segments": 38.0,
+        "play_count": 71.0,
+        "wait_count": 80.0,
+        "visual_density": 8.2,
+        "narrative_depth": 100.0,
+        "exercise_or_reflection": 1.0,
+        "topic_generalization": 100.0,
+        "reference_surpass_score": 108.9
+      },
+      "candidate_issue_codes": [],
+      "published": true,
+      "reason": "candidate score 100.0 meets cinematic best threshold 95.0 and is at least current best 100.0",
+      "validation_ok": true,
+      "render_ok": true,
+      "render_status": {
+        "ok": true,
+        "declared_scenes": [
+          "Scene_01_Hook",
+          "Scene_02_GeometryFirst",
+          "Scene_03_AhaMoment",
+          "Scene_04_ModelBuild",
+          "Scene_05_SymbolBridge",
+          "Scene_06_WorkedExample",
+          "Scene_07_ContrastCase",
+          "Scene_08_CommonMistake",
+          "Scene_09_ReflectionChallenge",
+          "Scene_10_Summary"
+        ],
+        "successful_scenes": [
+          "Scene_01_Hook",
+          "Scene_02_GeometryFirst",
+          "Scene_03_AhaMoment",
+          "Scene_04_ModelBuild",
+          "Scene_05_SymbolBridge",
+          "Scene_06_WorkedExample",
+          "Scene_07_ContrastCase",
+          "Scene_08_CommonMistake",
+          "Scene_09_ReflectionChallenge",
+          "Scene_10_Summary"
+        ],
+        "status_paths": [
+          "outputs/worker5-momentum-20260430-165817/render-Scene_01_Hook.log",
+          "outputs/worker5-momentum-20260430-165817/render-Scene_02_GeometryFirst.log",
+          "outputs/worker5-momentum-20260430-165817/render-Scene_03_AhaMoment.log",
+          "outputs/worker5-momentum-20260430-165817/render-Scene_04_ModelBuild.log",
+          "outputs/worker5-momentum-20260430-165817/render-Scene_05_SymbolBridge.log",
+          "outputs/worker5-momentum-20260430-165817/render-Scene_06_WorkedExample.log",
+          "outputs/worker5-momentum-20260430-165817/render-Scene_07_ContrastCase.log",
+          "outputs/worker5-momentum-20260430-165817/render-Scene_08_CommonMistake.log",
+          "outputs/worker5-momentum-20260430-165817/render-Scene_09_ReflectionChallenge.log",
+          "outputs/worker5-momentum-20260430-165817/render-Scene_10_Summary.log"
+        ]
+      },
+      "root_files": {
+        "video": "视频.mp4",
+        "script": "最新.py",
+        "problem": "最新问题.md"
+      },
+      "history_files": {
+        "script": "history/20260430-165817.py",
+        "problem": "history/20260430-165817-问题.md",
+        "metadata": "history/20260430-165817-metadata.json",
+        "quality_report": "history/20260430-165817-quality_report.json",
+        "manifest": "history/20260430-165817-sample_manifest.json",
+        "validate": "history/20260430-165817-validate.json",
+        "reference_eval": "history/20260430-165817-reference_eval.json"
+      },
+      "sample_manifest": {
+        "topic": "动量守恒：从碰撞实验到火箭反冲",
+        "engine": "deterministic",
+        "scene_count": 10,
+        "quality_score": 100.0,
+        "quality_signals": {
+          "sync_units_per_scene": 3.7,
           "voiceover_scene_coverage": 1.0
         },
         "script_path": "script.py",

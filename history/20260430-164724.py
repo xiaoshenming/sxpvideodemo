@@ -332,14 +332,12 @@ class BaseConfigScene(SXPBaseScene):
 class Scene_01_Hook(BaseConfigScene):
     def construct(self):
         self.setup_layout()
-        self.add_subcaption('今天我们用直观动画理解：动量守恒：从碰撞实验到火箭反冲', duration=7.0)
-        self.narration_timing_hook('今天我们用直观动画理解：动量守恒：从碰撞实验到火箭反冲', duration=7.0, scene_name='Hook', record_only=True)
-        self.add_subcaption('先明确这一段的目标: 用一个具体问题激发好奇心，避免直接堆公式。', duration=1.8)
-        self.narration_timing_hook('先明确这一段的目标: 用一个具体问题激发好奇心，避免直接堆公式。', duration=1.8, scene_name='Hook', record_only=True)
-        self.add_subcaption('再看画面设计: safe_text_box 提出问题，flow_diagram_pattern 建立现象、变量、目标三点关系。', duration=1.8)
-        self.narration_timing_hook('再看画面设计: safe_text_box 提出问题，flow_diagram_pattern 建立现象、变量、目标三点关系。', duration=1.8, scene_name='Hook', record_only=True)
-        self.add_subcaption('这一步的关键是: 用一个具体问题激发好奇心，避免直接堆公式。', duration=1.8)
-        self.narration_timing_hook('这一步的关键是: 用一个具体问题激发好奇心，避免直接堆公式。', duration=1.8, scene_name='Hook', record_only=True)
+        self.add_subcaption('今天我们先从一个看得见的问题开始。', duration=7.0)
+        self.narration_timing_hook('今天我们先从一个看得见的问题开始。', duration=7.0, scene_name='Hook', record_only=True)
+        self.add_subcaption('先明确这一段的目标: 用一个具体问题激发好奇心，避免直接堆公式。', duration=2.3)
+        self.narration_timing_hook('先明确这一段的目标: 用一个具体问题激发好奇心，避免直接堆公式。', duration=2.3, scene_name='Hook', record_only=True)
+        self.add_subcaption('再看画面设计: safe_text_box 提出问题，flow_diagram_pattern 建立现象、变量、目标三点关系。', duration=2.3)
+        self.narration_timing_hook('再看画面设计: safe_text_box 提出问题，flow_diagram_pattern 建立现象、变量、目标三点关系。', duration=2.3, scene_name='Hook', record_only=True)
         # Layout: 横屏 16:9; goal: 用一个具体问题激发好奇心，避免直接堆公式。
         title = self.title_text('Hook')
         title.to_edge(UP, buff=0.6)
