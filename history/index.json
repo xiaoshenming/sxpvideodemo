@@ -1,33 +1,35 @@
 {
-  "topic": "勾股定理几何证明",
+  "topic": "二分查找算法：区间收缩与循环不变量",
   "summary": {
-    "snapshot_count": 23,
-    "published_count": 21,
+    "snapshot_count": 24,
+    "published_count": 22,
     "archived_only_count": 2,
     "best_quality_score": 100.0,
     "latest_quality_score": 100.0,
     "candidate_issue_counts": {
       "objective_gate:missing-objective-quality-signals": 2
     },
-    "latest_candidate_issue_codes": [
-      "objective_gate:missing-objective-quality-signals"
-    ],
+    "latest_candidate_issue_codes": [],
     "objective_quality_signal_blocker_counts": {
       "missing-objective-quality-signals": 2
     },
-    "latest_objective_quality_signal_blockers": [
-      "missing-objective-quality-signals"
-    ],
+    "latest_objective_quality_signal_blockers": [],
     "weak_quality_dimension_counts": {
-      "improvement_over_best": 19
+      "geometry_rearrangement": 1,
+      "improvement_over_best": 20,
+      "layout_safety": 1,
+      "visual_pattern_density": 1
     },
     "latest_weak_quality_dimensions": [
+      "geometry_rearrangement",
+      "layout_safety",
+      "visual_pattern_density",
       "improvement_over_best"
     ],
     "next_candidate_minimum_score": 100.0,
     "latest_score_gap_to_next_publish": 0.0,
     "quality_regression_count": 0,
-    "cinematic_ready_count": 19,
+    "cinematic_ready_count": 20,
     "publish_gate": {
       "best_publish_score": 95.0,
       "first_snapshot_can_publish_without_existing_best": true,
@@ -36,34 +38,34 @@
       "minimum_voiceover_scene_coverage": 0.8
     },
     "quality_dimension_averages": {
-      "geometry_rearrangement": 100.0,
+      "geometry_rearrangement": 95.0,
       "cinematic_composition": 100.0,
       "attention_guidance": 100.0,
       "narration_sync": 100.0,
       "render_robustness": 100.0,
-      "global_theme_consistency": 75.0,
-      "voiceover_sync": 81.1,
-      "layout_safety": 100.0,
-      "narrative_completeness": 100.0,
-      "visual_pattern_density": 100.0,
+      "global_theme_consistency": 75.5,
+      "voiceover_sync": 82.0,
+      "layout_safety": 98.2,
+      "narrative_completeness": 99.2,
+      "visual_pattern_density": 96.0,
       "improvement_over_best": 0.0
     },
     "latest_quality_dimensions": {
-      "geometry_rearrangement": 100.0,
+      "geometry_rearrangement": 0.0,
       "cinematic_composition": 100.0,
       "attention_guidance": 100.0,
       "narration_sync": 100.0,
       "render_robustness": 100.0,
-      "global_theme_consistency": 75.0,
+      "global_theme_consistency": 85.0,
       "voiceover_sync": 100.0,
-      "layout_safety": 100.0,
-      "narrative_completeness": 100.0,
-      "visual_pattern_density": 100.0,
+      "layout_safety": 65.0,
+      "narrative_completeness": 83.0,
+      "visual_pattern_density": 20.0,
       "improvement_over_best": 0.0
     }
   },
   "latest_best": {
-    "timestamp": "20260430-102039",
+    "timestamp": "20260430-142802",
     "quality_score": 100.0,
     "root_files": {
       "video": "视频.mp4",
@@ -1052,6 +1054,67 @@
         "engine": "deterministic",
         "scene_count": 6,
         "quality_score": 100.0,
+        "script_path": "script.py",
+        "metadata_path": "metadata.json",
+        "quality_report_path": "quality_report.json"
+      }
+    },
+    {
+      "timestamp": "20260430-142802",
+      "topic": "二分查找算法：区间收缩与循环不变量",
+      "quality_score": 100.0,
+      "current_best_score": 100.0,
+      "quality_delta_from_current_best": 0.0,
+      "improvement_over_best": 0.0,
+      "cinematic_best_threshold": 95.0,
+      "meets_cinematic_best_threshold": true,
+      "quality_dimensions": {
+        "geometry_rearrangement": 0.0,
+        "cinematic_composition": 100.0,
+        "attention_guidance": 100.0,
+        "narration_sync": 100.0,
+        "render_robustness": 100.0,
+        "global_theme_consistency": 85.0,
+        "voiceover_sync": 100.0,
+        "layout_safety": 65.0,
+        "narrative_completeness": 83.0,
+        "visual_pattern_density": 20.0,
+        "improvement_over_best": 0.0
+      },
+      "weak_quality_dimensions": [
+        "geometry_rearrangement",
+        "layout_safety",
+        "visual_pattern_density",
+        "improvement_over_best"
+      ],
+      "objective_quality_signal_blockers": [],
+      "candidate_issue_codes": [],
+      "published": true,
+      "reason": "candidate score 100.0 meets cinematic best threshold 95.0 and is at least current best 100.0",
+      "validation_ok": true,
+      "render_ok": true,
+      "root_files": {
+        "video": "视频.mp4",
+        "script": "最新.py",
+        "problem": "最新问题.md"
+      },
+      "history_files": {
+        "script": "history/20260430-142802.py",
+        "problem": "history/20260430-142802-问题.md",
+        "metadata": "history/20260430-142802-metadata.json",
+        "quality_report": "history/20260430-142802-quality_report.json",
+        "manifest": "history/20260430-142802-sample_manifest.json",
+        "validate": "history/20260430-142802-validate.json"
+      },
+      "sample_manifest": {
+        "topic": "二分查找算法：区间收缩与循环不变量",
+        "engine": "deterministic",
+        "scene_count": 4,
+        "quality_score": 100.0,
+        "quality_signals": {
+          "sync_units_per_scene": 4.0,
+          "voiceover_scene_coverage": 1.0
+        },
         "script_path": "script.py",
         "metadata_path": "metadata.json",
         "quality_report_path": "quality_report.json"

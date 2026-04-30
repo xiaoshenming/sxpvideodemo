@@ -1,0 +1,30 @@
+{
+  "score": 100.0,
+  "geometry_rearrangement": 0.0,
+  "cinematic_composition": 100.0,
+  "attention_guidance": 100.0,
+  "narration_sync": 100.0,
+  "render_robustness": 100.0,
+  "global_theme_consistency": 85.0,
+  "voiceover_sync": 100.0,
+  "layout_safety": 65.0,
+  "narrative_completeness": 83.0,
+  "visual_pattern_density": 20.0,
+  "topic_generalization": 100.0,
+  "improvement_over_best": 0.0,
+  "strengths": [
+    "至少包含钩子、核心解释、总结等多个场景",
+    "强调可视化推理/结构化呈现，符合通用 Manim 视频优势",
+    "包含统一色板",
+    "visual_design 明确安全布局 helper 契约",
+    "sync_units 明确 shuxuepai 聚焦 helper 契约",
+    "sync_units 分段密度满足普通场景至少 3 段"
+  ],
+  "weaknesses": [
+    "老师参考代码抽象维度不足: layout_safety, visual_pattern_density"
+  ],
+  "next_actions": [
+    "明确设计 aha moment",
+    "把参考代码优点转成 sxpagents 自己的 SXPBaseScene/theme/layout_template/sync_units/visual_patterns 契约，不照搬 shuxuepai 项目架构"
+  ]
+}
