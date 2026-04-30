@@ -1,0 +1,9 @@
+{
+  "topic": "勾股定理几何证明",
+  "engine": "deterministic",
+  "scene_count": 6,
+  "quality_score": 100.0,
+  "script_path": "script.py",
+  "metadata_path": "metadata.json",
+  "quality_report_path": "quality_report.json"
+}
